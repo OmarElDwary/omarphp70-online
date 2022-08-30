@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMAR Final Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+<body>
+    <!--Header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-cairo font-size-20 yexy-black-250 m-0">Free shipping on all orders</p>
+            <div class="font-cairo font-size-16 d-flex">
+                <a href="#" class="px-3-border-right-border-left-text-dark p-2 text-decoration-none color-third">My Acount</a>
+                <a href="#" class="px-3-border-right-border-left-text-dark p-2 text-decoration-none color-third">Whishlest</a>
+                <a href="#" class="px-3-border-right-border-left-text-dark p-2 text-decoration-none color-third">Currency</a>
+                <a href="#" class="px-3-border-right-text-dark p-2 text-decoration-none color-third"><i class="fa-solid fa-cart-shopping"></i> My Cart</a>
+                
+            </div>     
+        </div>
+        
+        <div class="input-group input-group-merge input-group-borderless input-group-hover-light navbar-input-group">
+          <div class="input-group-prepend input-group-text">
+            <i class="bi-search"></i>
+          </div>
+
+          <input type="search" class="js-form-search form-control" placeholder="Search" aria-label="Search">
+          <a class="input-group-append input-group-text" href="javascript:;">
+            <i id="clearSearchResultsIcon" class="bi-x-lg" style="display: none;"></i>
+          </a>
+        </div>
+
+        <!--Main Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark color-last-bg color-third font-rubik">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Fashion </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active color-third" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Footwear</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Accesories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        <!--Main Navbar-->
+    </header>
+
+    <!--End of Header-->
+
+    <!--Main-->
+    <main id="main-site">
+      <!--owl carrosel-->
+      <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="./images/cover 1.jpeg" alt="Banner 1">
+            </li>
+            <li class="slide">
+              <img src="./images/cover 2.jpeg" alt="Banner 2">
+            </li>
+            <li class="slide">
+              <img src="./images/cover 4.jpeg" alt="Banner 3">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Featured Items-->
+      <section id="featured-items">
+        <div class="container p-5">
+          <h4 class="font-rubik text-center p-5 font-size-20">Featured Items</h4>
+          <div id="filters" class="button-group color-black text-center font-cairo font-size-16">
+            <button class="btn is-checked" data-filter="*">All</button>
+            <button class="btn" data-filter=".Men">Men</button>
+            <button class="btn" data-filter=".Women">Women</button>
+            <button class="btn" data-filter=".Kids">Kids</button>
+          </div>
+
+          <div class="grid">
+            <div class="grid-item Men border">
+             <div class="item py-2" style="width: 200px;">
+              <div class="product font-rale">
+                <a href="#"><img src="./images/men jacket.jpg" alt="product1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Male Kangroo Jacket</h6>
+                  <div class="rating color-last font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$13</span>
+                  </div>
+                  <button type="submit" class="btn btn-danger color-third-bg font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="grid-item Women border">
+              <div class="item py-2" style="width: 200px;">
+               <div class="product font-rale">
+                 <a href="#"><img src="./images/Woman Coat.jpg" alt="product1" class="img-fluid"></a>
+                 <div class="text-center">
+                   <h6>Trench Coat</h6>
+                   <div class="rating color-last font-size-12">
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                   </div>
+                   <div class="price py-2">
+                     <span>$119</span>
+                   </div>
+                   <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <div class="grid-item Kids border">
+              <div class="item py-2" style="width: 200px;">
+               <div class="product font-rale">
+                 <a href="#"><img src="./images/kid tshirt1.jpg" alt="product1" class="img-fluid"></a>
+                 <div class="text-center">
+                   <h6>Boys Tshirt</h6>
+                   <div class="rating color-last font-size-12">
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="far fa-star"></i></span>
+                   </div>
+                   <div class="price py-2">
+                     <span>$17</span>
+                   </div>
+                   <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <div class="grid-item Men border">
+              <div class="item py-2" style="width: 200px;">
+               <div class="product font-rale">
+                 <a href="#"><img src="./images/men jacket2.jpg" alt="product1" class="img-fluid"></a>
+                 <div class="text-center">
+                   <h6>Men thick hooded coat</h6>
+                   <div class="rating color-last font-size-12">
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="far fa-star"></i></span>
+                   </div>
+                   <div class="price py-2">
+                     <span>$22</span>
+                   </div>
+                   <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <div class="grid-item Women border">
+              <div class="item py-2" style="width: 200px;">
+               <div class="product font-rale">
+                 <a href="#"><img src="./images/women coat111.jpg" alt="product1" class="img-fluid"></a>
+                 <div class="text-center">
+                   <h6>Women Black Coat</h6>
+                   <div class="rating color-last font-size-12">
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                     <span><i class="fas fa-star"></i></span>
+                   </div>
+                   <div class="price py-2">
+                     <span>$152</span>
+                   </div>
+                   <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <div class="grid-item  Kids border ">
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <div class="d-flex flex-column">
+                    <a href="#"><img src="./images/kid.jpg" class="img-fluid" alt="pro1"></a>
+                    <div class="text-center">
+                      <h6>Long Sleeve Girls T-Shirt</h6>
+                      <div class="rating color-last font-size-12">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="price py-2">
+                        <span>$21</span>
+                      </div>
+                      <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item Men border  " >
+              <div class="item py-2" style="width: 200px;">
+                <div class="product font-rale">
+                  <div class="d-flex flex-column">
+                    <a href="#"><img src="./images/men tshirt.jpg" class="img-fluid" alt="pro1"></a>
+                    <div class="text-center">
+                      <h6>Men Sweater</h6>
+                      <div class="rating color-last font-size-12">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="price py-2">
+                        <span>$12</span>
+                      </div>
+                      <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Banners-->
+      <section id="banner_adds">
+        <div class="card card-image"
+       style="background-image: url(./images/Banner3.webp); background-size: contain;">
+    <div class="text-white text-center py-5 px-4 my-5">
+      <div>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">Enjoy 70% off</h2>
+        <a class="btn btn-outline-white btn-md"><i class="fa-solid fa-cart-minus"></i></i> View collection</a>
+      </div>
+    </div>
+  </div>
+      </section>
+      <!--Banners end-->
+    <!-- !Special Price -->
+      <!--owl carrosel-->
+
+      <!--Featured Items-->
+      <section id="trending-items">
+        <div class="container py-5">
+          <h4 class="font-rubik text-center font-size-20">Trending Items</h4>
+          <hr>
+          <!-- owl carousel -->
+            <div class="owl-carousel owl-theme">
+              <div class="item py-2 p-5">
+                <div class="product font-fira">
+                  <a href="#"><img src="./images/coat.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Dress</h6>
+                    <div class="rating color-last font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>$30</span>
+                    </div>
+                    <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2 p-5">
+                <div class="product font-fira">
+                  <a href="#"><img src="./images/dress.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Dress</h6>
+                    <div class="rating color-last font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>$62</span>
+                    </div>
+                    <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2 p-5">
+                <div class="product font-fira">
+                  <a href="#"><img src="./images/shirt.jpg" alt="product1" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Shirt</h6>
+                    <div class="rating color-last font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>$16</span>
+                    </div>
+                    <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2 p-5">
+                <div class="product font-fira">
+                  <div class="d-flex flex-column">
+                    <a href="#"><img src="./images/classic shirt.jpg" class="img-fluid" alt="pro1"></a>
+                    <div class="text-center">
+                      <h6>Classic Shirt</h6>
+                      <div class="rating color-last font-size-12">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="price py-2">
+                        <span>$22</span>
+                      </div>
+                      <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2 p-5">
+                <div class="product font-fira">
+                  <div class="d-flex flex-column">
+                    <a href="#"><img src="./images/tshirt.jpg" class="img-fluid" alt="pro1"></a>
+                    <div class="text-center">
+                      <h6>T shirt</h6>
+                      <div class="rating color-last font-size-12">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="price py-2">
+                        <span>$10</span>
+                      </div>
+                      <button type="submit" class="btn btn-danger font-size-12">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- !owl carousel -->
+        </div>
+      </section>
+    <!--Banners-->
+    <section id="banner_adds">
+      <div class="card card-image"
+     style="background-image: url(./images/banner2.jpeg); background-size: cover;">
+  <div class="color-black text-center py-5 px-4 my-5 font-size-18">
+    <div>
+      <p class="mx-5 mb-5"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vero sed cum ea accusantium rem maiores deleniti beatae iusto praesentium. Labore, cupiditate autem eligendi ab vitae ad corrupti molestias minus.</em></p>
+    </div>
+  </div>
+</div>
+    </section>
+    <!--Banners end-->
+    <!-- Blogs -->
+    <section id="blogs">
+      <div class="container py-4">
+        <h4 class="font-rubik font-size-20 text-center">Latest Blogs</h4>
+        <hr>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card border-0 font-rubik mr-5" style="width: 18rem;">
+              <img src="./images/blog1.jpeg" alt="cart image" class="card-img-top">
+              <h5 class="card-title font-size-16 text-center p-1">Title</h5>
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-black text-center">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 font-rubik mr-5" style="width: 18rem;">             
+              <img src="./images/blog2.jpeg" alt="cart image" class="card-img-top">
+              <h5 class="card-title font-size-16 text-center p-1">Title</h5>
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-black text-center">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 font-rubik mr-5" style="width: 18rem;">         
+              <img src="./images/blog3.jpeg" alt="cart image" class="card-img-top">
+              <h5 class="card-title font-size-16 text-center p-1">Title</h5>
+              <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non iste sequi cupiditate tempora iure. Velit accusamus saepe harum sed.</p>
+              <a href="#" class="color-black text-center">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- !Blogs -->
+
+    </main>
+
+    <!--End of Main-->
+
+    <!--Footer-->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Shops</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">New In</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Men</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Women</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Shoes</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Bags & Accescories</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Top Brands</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Special Offers</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Information</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Customer Service</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Best Sellers</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Manufacturers</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Blog</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Customer Service</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Search Terms</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Contact Us</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Store Locations</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h4 class="font-rubik font-size-20">Newslatter</h4>
+            <form class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Email *">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--End of footer-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <!--isotope cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <!--custom js-->
+    <script src="index.js"></script>
+</body>
+</html>
