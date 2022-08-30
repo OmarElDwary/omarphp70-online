@@ -1,0 +1,12 @@
+<?php
+  include('header.php');
+?>
+<?php
+  include('Template/_product.php');
+?>
+<?php
+  include('Template/_trending.php');
+?>
+<?php 
+include('footer.php');
+?>
